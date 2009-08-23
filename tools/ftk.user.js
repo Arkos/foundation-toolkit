@@ -19,7 +19,7 @@ var utils;
 var Constants;
 
 const realWindow = ( typeof(unsafeWindow) == "undefined" ) ? window : unsafeWindow;
-//const ftkApp = "http://fondation-toolkit.appspot.com/";
+//const ftkApp = "http://fondation-toolkit.appspot.com";
 const ftkApp = "http://localhost:8080";
 
 function WorkerPoolManager() {
@@ -66,7 +66,7 @@ function initGears() {
         }
     } try {
         server = unsafeWindow.google.gears.factory.create("beta.localserver");
-        store = server.createStore("fondation_offline");
+        //store = server.createStore("fondation_offline");
         workerPool = unsafeWindow.google.gears.factory.create("beta.workerpool");
         wpMgr = new WorkerPoolManager();
         wpMgr.rootUrl = ftkApp + "/workers/";

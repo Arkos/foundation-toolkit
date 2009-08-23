@@ -12,7 +12,7 @@
     <script type="text/javascript" src="scripts/gears_init.js"></script>
     <script>
       if (!window.google || !google.gears) {
-      location.href = "http://gears.google.com/?action=install&message=You'll need Gears to access full functionnality for Foundation Toolkit" +
+      location.href = "http://gears.google.com/?action=install&message=Gears est necessaire pour utiliser Fondation Toolkit, veuillez l'installer en cliquant sur le lien sur votre droite." +
       "&return=http://localhost:8080";
 }
     </script>
@@ -25,8 +25,19 @@
   </head>
 
   <body>
-    <a href="{{ url }}">{{ url_linktext }}</a>
-
-    {{ text }}
+    <h1>Fondation Toolkit</h1>
+    <a href="/html/plan.html">Fonctionnalit&eacute;s</a>
+    <p>
+    Ce script n&eacute;cessite :
+    <ul>
+      <li>Navigateur web Firefox : <a href="http://www.mozilla-europe.org/fr/firefox/">T&eacute;l&eacute;charger</a></li>
+      <li>Extension Google Gears : <a href="http://gears.google.com/?action=install&message=Gears est necessaire pour utiliser Fondation Toolkit, veuillez l'installer en cliquant sur le lien sur votre droite." +
+      "&return=http://localhost:8080">T&eacute;l&eacute;charger</a></li>
+      <li>Extension Greasemonkey : <a href="https://addons.mozilla.org/fr/firefox/addon/748">T&eacute;l&eacute;charger</a></li>
+    </ul>
+    </p>
+    <p>
+    Une fois ces composants install&eacute;s, cliquez sur le lien suivant pour <a href="/tools/ftk.user.js">installer le script</a>.
+    </p>
   </body>
 </html>
